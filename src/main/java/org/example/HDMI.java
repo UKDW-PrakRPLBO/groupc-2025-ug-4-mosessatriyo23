@@ -8,7 +8,7 @@ public class HDMI extends Colokan{
 
     @Override
     public double getRealBandwidth(){
-        int harganormal = 30000;
+        int harganormal = 50000;
         int harga = super.getHarga();
         double ratio = harga / (double)harganormal > 1?1:harga / (double)harganormal;
         return super.getPromisedBandwidth() * ratio;
